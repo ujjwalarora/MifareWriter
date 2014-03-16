@@ -1,0 +1,231 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/counter_pat_scrollview">
+
+<LinearLayout 
+          android:orientation="vertical"
+          android:gravity="center"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content">
+        
+        <TextView 
+      	android:text="MIFARE  WRITER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:textIsSelectable="true"
+        /> 
+        
+  	<Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+        
+        <TextView 
+      	android:text="1. CHOOSE SECTOR"
+      	android:gravity="center_horizontal"
+      	android:textColor="@color/dark_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:layout_marginBottom="20dip"
+         /> 
+  	
+        <TextView 
+      	android:text="Sector Number :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+         /> 
+         
+        <EditText 
+      	android:inputType="number"
+      	android:id="@+id/sec_no"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        />
+        
+        <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+        
+        <TextView 
+      	android:text="2. AUTHENTICATION"
+      	android:gravity="center_horizontal"
+      	android:textColor="@color/dark_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:layout_marginBottom="20dip"
+         /> 
+        
+        <CheckBox
+        android:text="Use default key"
+        android:id="@+id/chkDefault"
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+         />
+        
+        <TextView 
+      	android:text="Input KeyA :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+         /> 
+         
+        <EditText 
+      	android:inputType="text"
+      	android:id="@+id/keya"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        />
+        
+        <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="10dip"
+			android:background="@color/dark_red" />
+        
+        <TextView 
+      	android:text="Choose One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:textColor="@color/dark_green"
+         /> 
+        
+        <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="10dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+        
+        
+        <CheckBox 
+      	android:text="3A. STORE DATA"
+      	android:id="@+id/chkStoreData"
+      	android:textColor="@color/dark_green"
+      	android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:layout_marginBottom="20dip"
+         />
+        
+        <TextView 
+      	android:text="Block No. :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+         /> 
+         
+        <EditText 
+      	android:inputType="number"
+      	android:id="@+id/block_no"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        />
+        
+        <TextView 
+      	android:text="Input Data :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+         /> 
+         
+        <EditText 
+      	android:inputType="text"
+      	android:id="@+id/data"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        />
+        
+        <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+        
+        <CheckBox 
+      	android:text="3B. MODIFY KEYS"
+      	android:id="@+id/chkModifyKeys"
+      	android:textColor="@color/dark_green"
+      	android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:layout_marginBottom="20dip"
+         /> 
+        
+		<TextView 
+      	android:text="New KeyA :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+         /> 
+         
+        <EditText 
+      	android:inputType="text"
+      	android:id="@+id/new_keya"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        />
+        
+        <TextView 
+      	android:text="New KeyB :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+         /> 
+         
+        <EditText 
+      	android:inputType="text"
+      	android:id="@+id/new_keyb"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="25dp"
+        />
+        
+        <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+        
+        <Button
+        android:id="@+id/write_tag_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Write Tag"
+        android:layout_marginBottom="15dp"
+        android:padding="25dp"
+        android:textSize="25sp"
+        />
+    
+    <TextView 
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        />
+    
+    <WebView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="200px"
+	    android:id="@+id/web" />
+    
+</LinearLayout>
+</ScrollView>
